@@ -34,7 +34,7 @@ jobs:
 
       - name: Build site
         working-directory: quartz
-        run: npx quartz build -d content
+        run: node quartz/bootstrap-cli.mjs build -d content
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
